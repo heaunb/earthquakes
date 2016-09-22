@@ -2,6 +2,7 @@
 <html ng-app="earthquakeApp">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>earthquakes</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
@@ -22,11 +23,9 @@
 </div>
 
 <div class="main">
-
-    <div id="map"></div>
-
     <div class="container">
-        <h3>TimeLine</h3>
+        <div id="map"></div>
+        <h3>Timeline</h3>
         <ul>
             <li class="col-md-4" ng-repeat="data in earthEquakes">
                 <div class="thumbnail">
