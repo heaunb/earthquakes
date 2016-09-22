@@ -24,7 +24,7 @@ html, body {
     color: #ffffff;
     font-size: 48px;
     line-height: 48px;
-    width: 50%;
+    width: 70%;
     font-weight:400;
 }
 
@@ -46,9 +46,9 @@ html, body {
 .main h3 {
  background-color: #DDDDDD ;
  color: #757575   ;
- font-size: 15px;
+ font-size: 20px;
  margin: 0 0 40px 0;
- padding: 20px;
+ padding: 20px 0;
     width:100%;
 }
 
