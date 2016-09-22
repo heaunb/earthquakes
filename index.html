@@ -12,41 +12,9 @@
         width: 100%;
         height: 400px;
     }
-
-    #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto', 'sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-    }
-
-    #floating-panel {
-        position: absolute;
-        top: 5px;
-        left: 50%;
-        margin-left: -180px;
-        width: 350px;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-    }
-
-    #latlng {
-        width: 225px;
-    }
 </style>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-route.min.js"></script>
-
-<!--<script src="earthquakeApp.js"></script>-->
 
 <body ng-controller="earthquakeController">
 <div class="header">
@@ -62,9 +30,8 @@
         <ul>
             <li class="col-md-4" ng-repeat="data in earthEquakes">
                 <div class="thumbnail">
-                    <!--<img src="poster/{{movie.poster}}">-->
                     <p class="date"> {{data.properties.time | date:"MMM, dd yyyy hh:mm:ss" }}</p>
-                    <p class="title">{{data.properties.place  }}</p>
+                    <p class="title">{{data.properties.place }}</p>
                     <p class="price"> M {{data.properties.mag }} </p>
                     <!--<p class="date">{{movie.day|date:"yyyy.MM.dd."}}</p>-->
                     <p>Location : {{data.geometry.coordinates[1]}} °N
@@ -87,7 +54,7 @@
 <script>
     angular.module("earthquakeApp", ["ngRoute", 'earthquake.controller']);
 </script>
-<script src="controller.js"></script> 
+<script src="controller.js"></script>
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ6_92f8CbPDVnW5DfOSEUMMPFi05CUy8&callback=initialize">
